@@ -329,7 +329,7 @@
         "large_img_6Y3CB3"
       ],
       "custom_css": [
-        "\/* Full-screen desktop *\/@media (min-width: 1200px) {.banner-heading {letter-spacing: 4px; font-weight: 550; width: 800px; } .banner-text {margin-top: 50px !important; font-weight: 450; margin-bottom: 50px !important; }}"
+        "\/* Full-screen desktop *\/@media (min-width: 1200px) {.banner-heading {letter-spacing: 4px; font-weight: 550; width: 800px; }.banner-text {--des_font_size: 18px; --des_font_size_mb: 12px; --des_color: #ffffff; --des_color_mb: #ffffff; --line_height_des: 26px; --margin_bottom_des: 18px; --margin_bottom_des_tab: 18px; font-size: var(--des_font_size); color: var(--des_color); line-height: var(--line_height_des); margin-bottom: 50px !important; \/* Changed margin-bottom *\/ margin-top: 50px !important; \/* Changed margin-top *\/ font-weight: 450;}}"
       ],
       "settings": {
         "container": "fullwidth",
