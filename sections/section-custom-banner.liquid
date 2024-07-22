@@ -1,0 +1,148 @@
+
+<style>
+  #section-custom-banner .img-box .image img{
+    position:unset;
+  }
+  #section-custom-banner .content-box{
+    position:absolute;
+    top:0px !important;
+    padding: 0px 24%;
+    height: 100%;
+    padding-top: 28px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+   #section-custom-banner .content-box.content-box--custom{
+     display:flex;
+   }
+  #section-custom-banner .content-box.content-box--custom .banner-button{
+    margin-top: 0px;
+    display: inline;
+    height: auto;
+  }
+ #section-custom-banner .text-content *{
+   color:#ffffff;
+ }
+ #section-custom-banner .banner-button.button{
+   color:#ffffff;
+   border-color:#ffffff;
+ }
+
+@media (max-width:567px){
+    #section-custom-banner .content-box {
+      position: absolute;
+      top: 0px !important;
+      padding: 0px;
+      height: 100%;
+      padding-top: 28px;
+  }
+    #section-custom-banner .content-box.content-box--custom {
+      flex-direction: column;
+      padding-top: 150px;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+  #section-custom-banner .content-box.content-box--custom .banner-button {
+    margin-top: 0px;
+    display: inline;
+    height: auto;
+    margin-left: 0px;
+}
+  #section-custom-banner .banner-heading{
+    padding:0px;
+    margin:0px;
+  }
+}
+</style>
+<section id="section-custom-banner">
+<div class="container-full">
+    <div class="halo-block-content" style="--arrows_position: ">
+        <div class="halo-banner-wrapper slideshow is-slide">
+            <div>
+                <div class="item item--largeImg image-banner-item-large_img_h4AeFj border--none">
+                    <div class="banner-item">
+                        <div class="img-box img-box--mobile">
+                          <a class="image image-adapt adaptive_height" href="/collections" title="FINN&amp;FORM">
+                              <img
+                                  src="{{ section.settings.background_image_pc | img_url:'master' }}"
+                                  alt=""
+                                  srcset="{{ section.settings.background_image_pc | img_url:'master' }}" height="281" loading="lazy" class="" sizes="100vw">
+                          </a>
+                            <a class="image image-mobile image-adapt adaptive_height" href="/collections"
+                                 style="" title="FINN&amp;FORM"><img
+                                  src="{{ section.settings.background_image_mobile | img_url:'master' }}"
+                                  alt=""  srcset="{{ section.settings.background_image_mobile | img_url:'master' }}"
+                                 
+                                                                  height="780" loading="lazy" class="" sizes="100vw">
+                          </a>
+                        </div>
+                        <div class="content-box content-box--custom text-left align-items--center custom_position">
+                          <div class="text-content">
+                            <h1 class="banner-heading">
+                               {{ section.settings.main_title }}
+                            </h1>
+                            <h3 class="banner-sub-heading">{{ section.settings.sub_title }}</h3>
+                             <div class="banner-text">
+                               {{ section.settings.body }}
+                             </div>
+                          </div>
+                            <a href="{{ section.settings.redirect_link }}" class="banner-button button"
+                               style="--button_color: #ffffff;--button_bg: rgba(0,0,0,0);--button_border: #ffffff;--button_width: 235px;--button_color_hover: #ffffff;--button_bg_hover: #232323;--button_border_hover: #232323"><span>Join Now</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+{% schema %}
+  {
+    "name": "Section custom banner",
+    "settings": [
+       {
+            "type" : "image_picker",
+            "id" : "background_image_pc",
+            "label" : "Background Image PC"
+        },
+       {
+            "type" : "image_picker",
+            "id" : "background_image_mobile",
+            "label" : "Background Image Mobile"
+        },
+        {
+            "type" : "text",
+            "id" : "main_title",
+            "label" : "Main Title",
+            "default" : "F&F Membership Program"
+        },
+       {
+            "type" : "text",
+            "id" : "sub_title",
+            "label" : "Sub Title",
+            "default" : "Where the smart money goes"
+        },
+        {
+            "type": "richtext",
+            "id": "body",
+            "label": "Body",
+            "default": "<p>Nam tempus turpis at metus scelerisque placerat nulla deumantos delo sollicitudin delos felis. Pellentesque diam dolor an elementum et lobortis at mollis ut risus. Curabitur semper sagittis mi condimentum...</p>"
+        },
+      {
+            "type" : "url",
+            "id" : "redirect_link",
+            "label" : "Redirect Link"
+        },
+        
+    ],
+    "presets": [
+        {
+            "name": "Section custom banner"
+        }
+    ]
+  }
+{% endschema %}

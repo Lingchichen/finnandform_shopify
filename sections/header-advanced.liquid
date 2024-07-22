@@ -1,0 +1,202 @@
+{{ 'component-header-advanced.css' | asset_url | stylesheet_tag }}
+{%- if settings.enable_layout_rtl -%}
+    {% style %}
+        @media (min-width: 1025px) {
+            .layout_rtl .header-top--wrapper .header-advanced__customText {margin-left: 25px;margin-right: 0;text-align: right}
+            .layout_rtl .header-top--wrapper .header-top--right .header__icon+.header__icon {margin-left: 0;margin-right: 35px}
+            .layout_rtl .header-bottom--wrapper .header-bottom-right .help-item {margin-right: 0;padding-right: 0;margin-left: 14px;padding-left: 20px}
+            .layout_rtl .header-bottom--wrapper .header-bottom-right .help-item:before {right: auto;left: 0}
+            .layout_rtl .top-language-currency.enable-currency .halo-top-language .disclosure__button .text {margin-right: 10px;margin-left: 0}
+            .layout_rtl .top-language-currency .halo-top-language+.halo-top-currency:before {left: auto;right: 0}
+            .layout_rtl .top-language-currency .halo-top-language .disclosure__button {padding-left: 0}
+            .layout_rtl .top-language-currency .halo-top-language+.halo-top-currency {margin-left: 0;margin-right: 2px;padding-left: 0;padding-right: 8px}
+            .layout_rtl .header__group .header__icon--cart svg {margin-left: 0}
+            .layout_rtl .header-top--wrapper .quickSearchResultsWrap {left: auto;right: 0}
+            .layout_rtl .header-language_currency .top-language-currency.enable-currency .dropdown-language {left: 42px;right: auto}
+            .layout_rtl .header-language_currency .top-language-currency .dropdown-currency,
+            .layout_rtl .header-language_currency .top-language-currency.show .dropdown-currency{right: auto;left: 0}
+        }
+        @media (min-width: 1441px) {
+            .layout_rtl .header-top--wrapper .header-advanced__customText {margin-left: 50px}
+        }
+    {% endstyle %}
+{%- endif -%}
+
+<header class="header header-advanced header-advanced--{{ section.settings.layout }}" style="--bor-top-color: {% if section.settings.border_top != blank and section.settings.border_top != 'rgba(0,0,0,0)' %}5px solid {{ section.settings.border_top }}{% else %}none{% endif %}">
+    <div class="header-advanced__item" style="--bg-color: {{ block.settings.background }}; --spacing-l-r: {{ block.settings.padding_full_width }}px; --padding-top: {{ block.settings.padding_top }}px; --padding-bottom: {{ block.settings.padding_bottom }}px;">
+        <div class="container container-{{ block.settings.container }}">
+            <div class="header-advanced__content" style="display: flex; justify-content: space-between; align-items: center;">
+                <!-- Left: Search Icon -->
+                <div class="header__search">
+                    <details-modal class="header__iconItem header__search">
+                        <summary class="header__search-full" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+                            <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+                                <button class="button search__button field__button focus-inset" aria-label="{{ 'general.search.search' | t }}">{% render 'icon-search-02' %}</button>
+                            </form>
+                        </summary>
+                    </details-modal>
+                </div>
+
+                <!-- Center: Logo -->
+                <div class="header__logo" style="text-align: center;">
+                    <div class="header__heading">
+                        <a href="{{ routes.root_url }}" class="header__heading-link focus-inset">
+                            {%- if block.settings.logo != blank -%}
+                                {%- liquid 
+                                    assign logo = block.settings.logo
+                                    assign logo_width = block.settings.logo_width
+                                    assign logo_height = logo_width | divided_by: logo.aspect_ratio | round
+                                    assign logo_alt = logo.alt | default: shop.name | escape
+                                -%}
+                                {{ logo | image_url: width: 300 | image_tag:
+                                    class: 'header__heading-logo motion-reduce',
+                                    widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                                    height: logo_height,
+                                    width: logo_width,
+                                    alt: logo_alt
+                                }}
+                            {%- else -%}
+                                <span class="h2">{{ block.settings.logo_text | escape }}</span>
+                            {%- endif -%}
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right: Icons (Wishlist, Account, Cart, Language) -->
+                <div class="header-advanced-icons" style="display: flex; align-items: center;">
+                    {%- if block.settings.show_wishlist -%}
+                        <div class="header__iconItem header__icon--wishlist" style="margin-right: 15px;">
+                            <a href="{{ routes.wishlist_url }}" class="link link--text focus-inset">{% render 'icon-heart-2' %}</a>
+                        </div>
+                    {%- endif -%}
+
+                    {%- if block.settings.show_account -%}
+                        <div class="header__iconItem header__icon--account" style="margin-right: 15px;">
+                            <a href="{{ routes.account_url }}" class="link link--text focus-inset">{% render 'icon-account-2' %}</a>
+                        </div>
+                    {%- endif -%}
+
+                    {%- if block.settings.show_cart -%}
+                        <div class="header__iconItem header__icon--cart" style="margin-right: 15px;">
+                            <a href="{{ routes.cart_url }}" class="link link--text focus-inset">{% render 'icon-cart-03' %}</a>
+                        </div>
+                    {%- endif -%}
+
+                    <div class="header__language-currency">
+                        {% if settings.enable_multilang_shopify %}
+                            {% render 'halo-top-language' %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% schema %}
+{
+    "name": "Header - Advanced",
+    "settings": [
+        {
+            "type": "select",
+            "id": "layout",
+            "label": "Header Layout Style",
+            "default": "style1",
+            "options": [
+                {"value": "style1", "label": "Style 1"},
+                {"value": "style2", "label": "Style 2"}
+            ]
+        },
+        {
+            "type": "color",
+            "id": "border_top",
+            "label": "Border Top Color"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "group_2",
+            "name": "Header Content",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "logo",
+                    "label": "Logo"
+                },
+                {
+                    "type": "range",
+                    "id": "logo_width",
+                    "label": "Logo Width",
+                    "min": 50,
+                    "max": 300,
+                    "step": 5,
+                    "default": 145
+                },
+                {
+                    "type": "text",
+                    "id": "logo_text",
+                    "label": "Logo Text",
+                    "default": "FINN & FORM"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_wishlist",
+                    "label": "Show Wishlist Icon",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_account",
+                    "label": "Show Account Icon",
+                    "default": true
+                },
+                {
+                    "type": "checkbox",
+                    "id": "show_cart",
+                    "label": "Show Cart Icon",
+                    "default": true
+                },
+                {
+                    "type": "color",
+                    "id": "background",
+                    "label": "Background Color",
+                    "default": "#ffffff"
+                },
+                {
+                    "type": "range",
+                    "id": "padding_full_width",
+                    "label": "Full Width Padding",
+                    "min": 0,
+                    "max": 75,
+                    "step": 1,
+                    "default": 0
+                },
+                {
+                    "type": "range",
+                    "id": "padding_top",
+                    "label": "Padding Top",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 20
+                },
+                {
+                    "type": "range",
+                    "id": "padding_bottom",
+                    "label": "Padding Bottom",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "default": 20
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Header - Advanced",
+            "category": "Header"
+        }
+    ]
+}
+{% endschema %}
