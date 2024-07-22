@@ -329,7 +329,7 @@
         "large_img_6Y3CB3"
       ],
       "custom_css": [
-        "\/* Full-screen desktop *\/@media (min-width: 1200px) {.banner-heading {letter-spacing: 4px; font-weight: 550; width: 800px;}.banner-text {margin-top: 20px; font-weight: 450; margin-bottom: 50px;}}"
+        "\/* Full-screen desktop *\/@media (min-width: 1200px) {.banner-heading {letter-spacing: 4px; font-weight: 550; width: 800px; } .banner-text {margin-top: 50px; font-weight: 450; margin-bottom: 50px; }}"
       ],
       "settings": {
         "container": "fullwidth",
