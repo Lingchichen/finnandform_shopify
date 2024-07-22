@@ -329,7 +329,7 @@
         "large_img_6Y3CB3"
       ],
       "custom_css": [
-        ".banner-heading {letter-spacing: 4px; font-weight: 500; width:700;}"
+        ".banner-heading {letter-spacing: 4px; font-weight: 550; width:800px;}"
       ],
       "settings": {
         "container": "fullwidth",
