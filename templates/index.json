@@ -330,7 +330,7 @@
       ],
       "custom_css": [
         "@media (max-width: 768px) {.banner-heading {letter-spacing: 4px; font-weight: 550; width: 800px; }}",
-        "\/* Full-screen desktop *\/@media (min-width: 1200px) {.banner-heading {letter-spacing: 4px; font-weight: 550; width: 800px; }}"
+        " \/* Full-screen desktop *\/@media (min-width: 1200px) {.banner-heading {letter-spacing: 4px !important; font-weight: 550 !important; width: 800px !important; }}"
       ],
       "settings": {
         "container": "fullwidth",
