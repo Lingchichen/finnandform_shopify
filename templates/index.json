@@ -330,7 +330,7 @@
       ],
       "custom_css": [
         ".banner-heading {letter-spacing: 4px; font-weight: 550; width: 800px;}",
-        ".banner-text{font-weight: 450;}"
+        ".banner-text {margin-top:20px; font-weight: 450; margin-bottom:20px;}"
       ],
       "settings": {
         "container": "fullwidth",
