@@ -1241,8 +1241,8 @@
       ],
       "settings": {
         "container": "1170",
-        "padding_full_width": 0,
-        "mg_top_desktop": 100,
+        "padding_full_width": 20,
+        "mg_top_desktop": 50,
         "mg_top_tablet": 50,
         "mg_top_mobile": 50,
         "mg_bottom_desktop": 50,
@@ -1265,9 +1265,9 @@
         "display_type": "slide",
         "list_gap": 22,
         "enable_arrows": true,
-        "arrows_position": "50%",
+        "arrows_position": "5%",
         "enable_dots": false,
-        "enable_autoplay": true
+        "enable_autoplay": false
       }
     },
     "image_banner_UfjktK": {
