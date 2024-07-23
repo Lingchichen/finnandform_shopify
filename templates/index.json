@@ -329,7 +329,7 @@
         "large_img_6Y3CB3"
       ],
       "custom_css": [
-        ".banner-text {--des_font_size: 24px !important; width:800px;}"
+        ".banner-text {--des_font_size: 24px !important; width: 1000px;}"
       ],
       "settings": {
         "container": "fullwidth",
