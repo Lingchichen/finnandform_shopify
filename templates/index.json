@@ -328,9 +328,7 @@
       "block_order": [
         "large_img_6Y3CB3"
       ],
-      "custom_css": [
-    "@media (min-width: 1410px) { .content-box { --content_width: 100% !important; padding-left: 25% !important; } .banner-text { --des_font_size: 28px !important; width: 1200px; } .banner-heading { font-family: Futura, sans-serif !important; --letter_spacing_heading: 6px !important; font-size: 60px !important; } .banner-button { --button_width: 260px !important; padding: 15px !important; } .banner-button span { font-size: 24px; } } @media (min-width: 1290px) and (max-width: 1410px) { .content-box { --content_width: 100% !important; padding-left: 25% !important; } .banner-text { --des_font_size: 18px !important; width: 1200px; } .banner-heading { font-family: Futura, sans-serif !important; --letter_spacing_heading: 6px !important; font-size: 30px !important; } .banner-button { --button_width: 160px !important; padding: 5px !important; } .banner-button span { font-size: 18px; } } @media (min-width: 768px) and (max-width: 1290px) { .content-box { --content_width: 100% !important; padding-left: 25% !important; } .banner-text { --des_font_size: 18px !important; width: 1200px; } .banner-heading { font-family: Futura, sans-serif !important; --letter_spacing_heading: 3px !important; font-size: 24px !important; } .banner-button { --button_width: 160px !important; padding: 3px !important; } .banner-button span { font-size: 12px; } }"
-      ],
+      "custom_css": [],
       "settings": {
         "container": "fullwidth",
         "padding_full_width": 0,

@@ -2,7 +2,7 @@
 {%- liquid
     if settings.list_iso_rtl != blank
         assign locale_iso_code = request.locale.iso_code
-        assign arr_list_rtl = settings.list_iso_rtl | remove:' ' | split:',' 
+        assign arr_list_rtl = settings.list_iso_rtl | remove:' ' | split:','
         if arr_list_rtl contains locale_iso_code
             assign enable_iso_rtl = true
         else
@@ -19,6 +19,7 @@
         <link rel="canonical" href="{{ canonical_url }}">
         <link rel="canonical" href="{{ canonical_url }}" canonical-shop-url="{{ shop.url }}/">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.6.3/css/ionicons.min.css">
+     <link rel="stylesheet" href="{{ 'jack_custom_styles.css' | asset_url }}">
       <script src="https://kit.fontawesome.com/224f0e57bf.js" crossorigin="anonymous"></script>
         {%- if settings.favicon != blank -%}
             <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
@@ -47,17 +48,17 @@
             elsif settings.layout_body == 'custom_width'
                 assign layout_body = 'body-custom-width'
             endif
-        
+
             if settings.style_dots == '02'
                 assign style_dots = 'style-dots-2'
             endif
-        
+
             if settings.style_arrows == '02'
                 assign style_arrows = 'style-arrows-2'
             elsif settings.style_arrows == '05'
                 assign style_arrows = 'style-arrows-5'
             endif
-        
+
             if settings.product_card_layout == '02'
                 assign product_card_layout = 'product-card-layout-02'
             elsif settings.product_card_layout == '03'
@@ -73,13 +74,13 @@
             else
                 assign product_card_layout = 'product-card-layout-01'
             endif
-        
+
             if settings.quick_shop_type == '2'
                 assign quick_shop_type = 'quick_shop_option_2'
             elsif  settings.quick_shop_type == '3'
                 assign quick_shop_type = 'quick_shop_option_3'
             endif
-        
+
             if settings.style_text_size_varriant == '02'
                 assign style_text_size_varriant = 'size_varriant_style_2'
             endif
@@ -87,9 +88,9 @@
         <script>
           var data_json_map = {{ shop.metaobjects.shipping_estmate.shipping-estmate-xmsar5fz | json }}
           data_json_map = data_json_map['shipping_estmate_data'];
-          
+
         </script>
-      
+
       <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
       <script>
         hbspt.forms.create({
@@ -151,7 +152,7 @@
         flex-direction:column;
         width:80%;
         padding:0px 60px;
-        
+
       }
       .header-utility__content {
           display: flex !important;
@@ -210,7 +211,7 @@
           /* right: -10px; */
           list-style: none;
           display: block;
-         
+
       }
       .section-header-utility .container{
         max-width: 95%;
@@ -246,7 +247,7 @@
             min-width: 166px;
             margin-top: -58px;
         }
-      
+
           .customer-review-block .slick-arrow {
               top: calc(105% - 105px) !important;
           }
@@ -290,7 +291,7 @@
         .halo-product-block .products-carousel.enable_progress_bar .slick-next {
             right: -30px!important;
         }
-        
+
       }
       .shopify-payment-button__button--unbranded {
           background-color: #bc0000;
@@ -371,7 +372,7 @@
         letter-spacing:-px !important;
       }
 
-     
+
 
       product-item-new .price-title {
           font-size: 12px;
@@ -403,7 +404,7 @@
    }
   .product-item .card-product__group.group-right{
       top:15px;
-    }       
+    }
      .halo-productBadges {
        flex-direction:row;
        gap:8px;
@@ -424,7 +425,7 @@
       product-item-new{
          font-family: var(--font-body-family) !important;
       }
-      
+
       .product-item .price__last * {
           font-weight: bold !important;
           font-size: 16px !important;
@@ -481,7 +482,7 @@
                     font-size: 10px !important;
                     letter-spacing: .2rem;
                     font-weight: normal;
-                   
+
             }
             .price-new .price__sale.price__sale_compare .price-item{
               font-size:10px;
@@ -503,13 +504,13 @@
 </head>
 
     <body class="template-{{ request.page_type }} {{layout_body}} {{style_dots}} {{style_text_size_varriant}} {{style_arrows}} {{product_card_layout}} {% if settings.enable_button_disable_arrows %} enable_button_disable_arrows{% endif %}{% if settings.display_text_color_title %} enable_text_color_title{% endif %}{% if settings.style_text_color_varriant == '02' %} style_2_text_color_varriant{% endif %}{% if settings.hide_compare_homepage %} hide_compare_homepage{% endif %} {{ quick_shop_type }}{% if settings.show_image_loading %} show_image_loading{% endif %}{% if settings.show_effect_close %} show_effect_close{% endif %}{% if settings.enable_layout_rtl and enable_iso_rtl %} layout_rtl{% endif %}{% if request.design_mode %} shopify-design-mode{% endif %}{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-        
+
         <div class="body-content-wrapper">
             <a class="skip-to-content-link button visually-hidden" href="#MainContent">{{ "accessibility.skip_to_text" | t }}</a>
 
             {% sections 'header-group' %}
             {% render 'wrapper-header' %}
-            
+
             {%- if settings.layout_body == 'boxed' -%}
                 <div class="wrapper-hasbanner-adv">
             {%- endif -%}
@@ -518,16 +519,16 @@
                 <main id="MainContent" class="wrapper-body content-for-layout focus-none" role="main" tabindex="-1">
                     {{ content_for_layout }}
                 </main>
-            {%- if settings.layout_body == 'boxed' -%}        
+            {%- if settings.layout_body == 'boxed' -%}
                 </div>
             {%- endif -%}
-            
+
             <div class="wrapper-footer">{% sections 'footer-group' %}</div>
 
             {% section 'halo-toolbar-mobile' %}
 
             <ul hidden><li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li></ul>
-            
+
             {% render 'global-script-2' %}
         </div>
         {% render 'halo-popup' %}
@@ -535,7 +536,7 @@
         {%- if settings.enable_view_documentation -%}
             {% render 'theme-editor-notification' %}
         {%- endif -%}
-        
+
         {%- if settings.use_custom_js -%}
             {{ 'custom.js' | asset_url | script_tag }}
         {%- endif -%}
@@ -550,7 +551,7 @@
             {%- endif -%}
         </div>
         {% render 'halo-sidebar' %}
-       
+
          <script>
           // With the above scripts loaded, you can call `tippy()` with a CSS
           // selector and a `content` prop:
