@@ -673,7 +673,8 @@
       "custom_css": [
         ".container {padding: 0;}",
         ".image-zoom img {will-change: none !important; transition: none !important;}",
-        ".bg-policies-block .halo-row {padding: 0 !important; margin: 0 !important;}"
+        ".bg-policies-block .halo-row {padding: 0 !important; margin: 0 !important;}",
+        ".bg-policies-block{width:100%!important;}"
       ],
       "settings": {
         "container": "container",
