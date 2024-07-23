@@ -867,7 +867,7 @@
       ],
       "custom_css": [
         ".container {padding: 0;}",
-        ".image-zoom img {will-change: none; transition: none;}"
+        ".image-zoom img {will-change: none !important; transition: none !important;}"
       ],
       "settings": {
         "container": "container",
