@@ -671,7 +671,8 @@
         "text_wfLwA4"
       ],
       "custom_css": [
-
+        ".container {padding: 0;}",
+        ".image-zoom img{will-change:none; transition:none;}"
       ],
       "settings": {
         "container": "container",
