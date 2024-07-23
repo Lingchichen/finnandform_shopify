@@ -674,7 +674,8 @@
         ".container {padding: 0;}",
         ".image-zoom img {will-change: none !important; transition: none !important;}",
         ".bg-policies-block .halo-row {padding: 0 !important; margin: 0 !important;}",
-        ".bg-policies-block {--body-custom-width-container: 100% !important;}"
+        ".bg-policies-block {--body-custom-width-container: 100% !important;}",
+        ".body-custom-width .wrapper-body .container{max-width:95% !important;}"
       ],
       "settings": {
         "container": "container",
