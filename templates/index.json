@@ -333,7 +333,7 @@
       "custom_css": [
         ".sections-image-banner-block {margin-top: 30px;}",
         "@media (min-width: 1400px) {.banner-heading {--letter_spacing_heading: 2px !important; }}",
-        "@media (max-width: 1400px) {.banner-heading {--heading_font_size: 35px !important; --letter_spacing_heading: 2px !important; padding-top: 5%; padding-left:5%; } .banner-text {--des_font_size: 15px !important; }}"
+        "@media (max-width: 1400px) {.banner-heading {--heading_font_size: 35px !important; --letter_spacing_heading: 2px !important; padding-top: 5%; padding-left: 5%; } .banner-text {--des_font_size: 15px !important; padding-top: 5%; padding-left: 5%; }}"
       ],
       "settings": {
         "container": "fullwidth",
