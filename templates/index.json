@@ -401,7 +401,7 @@
         "mg_top_desktop": 30,
         "mg_top_tablet": 0,
         "mg_top_mobile": 0,
-        "mg_bottom_desktop": 55,
+        "mg_bottom_desktop": 40,
         "mg_bottom_tablet": 20,
         "mg_bottom_mobile": 25,
         "rich_text_bg": "#ffffff",
