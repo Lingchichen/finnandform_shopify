@@ -1358,7 +1358,8 @@
         "small_img_LhAixm"
       ],
       "custom_css": [
-        ".banner-heading {letter-spacing: 6px !important;}"
+        ".banner-heading {letter-spacing: 6px !important;}",
+        ".banner-text {letter-spacing: 0.5px;}"
       ],
       "settings": {
         "container": "container",
