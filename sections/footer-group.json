@@ -268,8 +268,7 @@
       ],
       "custom_css": [
         ".footer.footer-1 .footer__content-top {margin: 0px; border-top: 1px solid #d3d3d3;}",
-        ".footer-block__item.footer-block__column * {color: #000000;}",
-        ". halo-block halo-banner image-banner style_bg--none is-load {--mg_bottom_desktop: 0px;}"
+        ".footer-block__item.footer-block__column * {color: #000000;}"
       ],
       "settings": {
         "container": "1770",
