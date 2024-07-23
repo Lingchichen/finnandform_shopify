@@ -333,7 +333,7 @@
       "custom_css": [
         ".sections-image-banner-block {margin-top: 30px;}",
         "@media (min-width: 1400px) {.banner-heading {--letter_spacing_heading: 2px !important; }}",
-        "@media (max-width: 1400px) {.content-box {flex-direction: row; \/* Change layout to row *\/ justify-content: center; align-items: center; } .banner-text {margin-bottom: 0; \/* Remove bottom margin for inline layout *\/ margin-right: 20px; \/* Space between text and button *\/ } .banner-button {margin-top: 0; \/* Remove top margin for inline layout *\/ }}"
+        "@media (max-width: 1400px) {.banner-heading {--heading_font_size: 35px !important; --letter_spacing_heading: 2px !important; padding-top: 5%; padding-left: 5%; } .banner-text {--des_font_size: 15px !important; padding-left: 5%; } .banner-button {left: 5% !important; --button_width: 5% ！important; }}"
       ],
       "settings": {
         "container": "fullwidth",
