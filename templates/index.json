@@ -672,7 +672,7 @@
       ],
       "custom_css": [
         ".container {padding: 0;}",
-        ".image-zoom img{will-change:none; transition:none;}"
+        ".image-zoom img {will-change: none; transition: none;}"
       ],
       "settings": {
         "container": "container",
@@ -865,6 +865,10 @@
         "text_wxgK7j",
         "text_9gRdyK"
       ],
+      "custom_css": [
+        ".container {padding: 0;}",
+        ".image-zoom img {will-change: none; transition: none;}"
+      ],
       "settings": {
         "container": "container",
         "padding_full_width": 0,
@@ -1013,6 +1017,9 @@
       },
       "block_order": [
         "large_img_j9jzhB"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "container": "fullwidth",
