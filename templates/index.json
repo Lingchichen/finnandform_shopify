@@ -341,7 +341,7 @@
           .banner-heading {
             font-family: Futura, sans-serif !important;
             --letter_spacing_heading: 6px !important;
-            font-size: 60px !important;
+            --heading-font-size: 60px !important;
           }
           .banner-button {
             --button_width: 260px !important;
@@ -363,7 +363,7 @@
           .banner-heading {
             font-family: Futura, sans-serif !important;
             --letter_spacing_heading: 6px !important;
-            font-size: 30px !important;
+          --heading-font-size: 30px !important;
           }
           .banner-button {
             --button_width: 160px !important;
