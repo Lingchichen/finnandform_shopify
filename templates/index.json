@@ -170,7 +170,7 @@
         "hr {border: none; height: 1px; background-color: white; width: 50%; margin: 0 auto;}",
         ".slide-heading slide-pc {font-size: 5rem;}",
         ".slide-text slide-pc {font-size: 1.5rem !importanti;}",
-        ".fluid-width-video-wrapper {padding-bottom: 10%; margin-bottom:20}"
+        ".fluid-width-video-wrapper {padding-bottom: 10%;}"
       ],
       "settings": {
         "container": "fullwidth",
