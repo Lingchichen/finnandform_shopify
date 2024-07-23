@@ -169,8 +169,7 @@
         ".slide-content {width: 100%; top: 75%; margin: 0 auto;}",
         "hr {border: none; \/* 移除默认样式 *\/ height: 1px; \/* 设置线的高度 *\/ background-color: white; \/* 设置线的颜色 *\/ width: 50%; margin: 0 auto;}",
         ".slide-heading slide-pc {font-size: 5rem;}",
-        ".slide-text slide-pc {font-size: 1.5rem !importanti;}",
-        "@media (max-width: 768px) {}"
+        ".slide-text slide-pc {font-size: 1.5rem !importanti;}"
       ],
       "settings": {
         "container": "fullwidth",
