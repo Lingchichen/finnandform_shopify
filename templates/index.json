@@ -331,7 +331,7 @@
       "custom_css": [
         ".content-box {--content_width: 1200px !important; padding-left: 200px !important;}",
         ".banner-text {--des_font_size: 28px !important; width: 1200px;}",
-        ".banner-heading {font-family: Futura, sans-serif !important; --letter_spacing_heading: 4px !important; font-size:60}"
+        ".banner-heading {font-family: Futura, sans-serif !important; --letter_spacing_heading: 4px !important; font-size: 60px !important;}"
       ],
       "settings": {
         "container": "fullwidth",
