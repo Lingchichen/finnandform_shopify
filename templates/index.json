@@ -332,7 +332,7 @@
       ],
       "custom_css": [
         ".sections-image-banner-block {margin-top: 30px;}",
-        "@media (max-width: 1400px) {.banner-heading {--heading_font_size: 30px !important; }}"
+        "@media (max-width: 1400px) {.banner-heading {--heading_font_size: 30px !important; --letter_spacing_heading:2px !important; }}"
       ],
       "settings": {
         "container": "fullwidth",
