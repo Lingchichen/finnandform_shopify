@@ -333,7 +333,7 @@
       "custom_css": [
         ".sections-image-banner-block {margin-top: 30px;}",
         "@media (min-width: 1400px) {.banner-heading {--letter_spacing_heading: 2px !important; }}",
-        "@media (max-width: 1400px) {.content-box {--content_width: 80%; } .banner-heading {--heading_font_size: 35px !important; --letter_spacing_heading: 2px !important; padding-top: 10%; padding-left: 5%; } .banner-text {--des_font_size: 15px !important; padding-left: 5%; } .banner-button {position: relative; left: 100% !important; top: -10% !important; --button_width: 5% ！important; }}"
+        "@media (max-width: 1400px) {.content-box {--content_width: 1000px; } .banner-heading {--heading_font_size: 35px !important; --letter_spacing_heading: 2px !important; padding-top: 10%; padding-left: 5%; } .banner-text {--des_font_size: 15px !important; padding-left: 5%; } .banner-button {position: relative; left: 100% !important; top: -10% !important; --button_width: 5% ！important; }}"
       ],
       "settings": {
         "container": "fullwidth",
