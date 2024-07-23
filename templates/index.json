@@ -330,7 +330,7 @@
       ],
       "custom_css": [
         ".content-box {--content_width: 1200px !important; padding-left: 200px !important;}",
-        ".banner-text {--des_font_size: 30px !important; width: 1200px;}"
+        ".banner-text {--des_font_size: 28px !important; width: 1200px;}"
       ],
       "settings": {
         "container": "fullwidth",
