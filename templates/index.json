@@ -1240,7 +1240,7 @@
         ".banner-heading {border-top: 1px solid white; border-bottom: 1px solid white;}"
       ],
       "settings": {
-        "container": "1170",
+        "container": "1770",
         "padding_full_width": 20,
         "mg_top_desktop": 50,
         "mg_top_tablet": 50,
