@@ -1360,7 +1360,8 @@
       "custom_css": [
         ".banner-heading {letter-spacing: 6px !important;}",
         ".banner-text {letter-spacing: 0px;}",
-        ".halo-banner-wrapper .flex-box__banner .content-box {margin-right: 20% !important;}"
+        ".halo-banner-wrapper .flex-box__banner .content-box {margin-right: 20% !important;}",
+        ".img-box .image img{height:90%; top:5%; bottom:5%;}"
       ],
       "settings": {
         "container": "container",
