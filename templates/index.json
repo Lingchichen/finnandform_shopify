@@ -331,7 +331,7 @@
         "large_img_6Y3CB3"
       ],
       "custom_css": [
-
+        ".sections-image-banner-block{margin-top:30px;}"
       ],
       "settings": {
         "container": "fullwidth",
