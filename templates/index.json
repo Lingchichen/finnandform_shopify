@@ -1313,7 +1313,7 @@
             "font_weight_heading": "600",
             "color_heading": "#ffffff",
             "text": "You've earned the accolades, built your future and confirmed your promise. You have always made smart choices, at work, at home, and in life. Now it's time to sit back and enjoy your success. Finn & Form furniture is designed and built with you in mind. It is smart luxury for those who appreciate craftsmanship and quality but won't overpay.\n<br>\n<br>\n\nFinn & Form is a testament to the proven traditions of Italyʼs storied ateliers, tanners and furniture makers but also an appreciation of tech-forward engineers, designers and planners who use AI-enabled predictive analytics to determine the styles and quantities of furniture sought by discerning members.",
-            "font_size_des": 20,
+            "font_size_des": 16,
             "font_size_des_mb": 12,
             "line_height_des": 26,
             "margin_bottom_des": 50,
@@ -1359,7 +1359,7 @@
       ],
       "custom_css": [
         ".banner-heading {letter-spacing: 6px !important;}",
-        ".banner-text {letter-spacing: 0.5px;}"
+        ".banner-text {letter-spacing: 0px;}"
       ],
       "settings": {
         "container": "container",
@@ -1428,7 +1428,7 @@
             "font_weight_heading": "600",
             "color_heading": "#232323",
             "text": "Our furniture is designed and manufactured by seasoned ateliers made to order in batches to ensure the highest levels of quality, craftsmanship and economy. Secure your allocation with a deposit and we'll pass on the savings of not having expensive showrooms and inventory-packed warehouses. Our team of dedicated furniture designers and AI-analytics engineers work in perfect synchronicity to get you what you want, where you love it, by when you must have it, at prices that make sense.",
-            "font_size_des": 20,
+            "font_size_des": 18,
             "font_size_des_mb": 12,
             "line_height_des": 26,
             "margin_bottom_des": 35,
@@ -1471,6 +1471,10 @@
       },
       "block_order": [
         "small_img_EWpCja"
+      ],
+      "custom_css": [
+        ".banner-heading {letter-spacing: 5px !important;}",
+        ".banner-text {letter-spacing: 0px;}"
       ],
       "settings": {
         "container": "container",
@@ -1539,12 +1543,12 @@
             "font_weight_heading": "600",
             "color_heading": "#ffffff",
             "text": "Our recliners are precision-engineering and software-enabled to deliver optimal\ncomfort. Our build processes are agile and efficient to yield savings that we pass on. And our singular commitment to quality is evident in the look, feel and experience of each and every piece you find at Finn & Form.\n<br><br>\nItalian leather luxury meets futuristic technology and precision engineering with\nFinn & Formʼs motorized recliners. Featuring advanced mechanical engineering and software-powered zero-G comfort and smoothness, these exquisite pieces have proven pedigree in the most elite cinemas of the world.",
-            "font_size_des": 18,
+            "font_size_des": 16,
             "font_size_des_mb": 12,
             "line_height_des": 26,
             "margin_bottom_des": 50,
             "color_des": "#ffffff",
-            "content_width": 450,
+            "content_width": 475,
             "align": "left",
             "enable_content_border": false,
             "content_border_color": "#ffffff",
@@ -1584,7 +1588,9 @@
         "small_img_fg6Jfr"
       ],
       "custom_css": [
-        ".halo-banner-wrapper .type-item--small {margin-bottom: 0px;}"
+        ".halo-banner-wrapper .type-item--small {margin-bottom: 0px;}",
+        ".banner-heading {letter-spacing: 6px !important;}",
+        ".banner-text {letter-spacing: 0.5px;}"
       ],
       "settings": {
         "container": "container",
