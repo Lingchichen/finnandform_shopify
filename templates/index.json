@@ -390,7 +390,7 @@
         "text_nBTLJb"
       ],
       "custom_css": [
-        ".rich-text__text rte {line-height: 2 !important;}"
+        ".rich-text__text {line-height: 2 !important;}"
       ],
       "settings": {
         "container": "fullwidth",
