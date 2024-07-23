@@ -1265,8 +1265,8 @@
         "display_type": "slide",
         "list_gap": 22,
         "enable_arrows": true,
-        "arrows_position": "10px",
-        "enable_dots": true,
+        "arrows_position": "50%",
+        "enable_dots": false,
         "enable_autoplay": true
       }
     },
