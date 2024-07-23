@@ -166,8 +166,8 @@
       ],
       "custom_css": [
         ".slideshow-wrapper .slide-button.button {background-color: white !important; opacity: 0.4; padding: 12px 25px !important; border-radius: 0px; text-decoration: none !important; border: 1px solid white; color: black; margin-bottom: 30px;}",
+        ".slide-block-image_agV8wX .slide-content {width: 70%; top: 75%; margin: auto;}",
         "hr {border: none; \/* 移除默认样式 *\/ height: 1px; \/* 设置线的高度 *\/ background-color: white; \/* 设置线的颜色 *\/ margin: 15px 0; \/* 设置线的上下外边距 *\/}",
-        ".slide-content {top: 75%; width: 100%; margin: auto;}",
         ".slide-heading slide-pc {font-size: 5rem;}"
       ],
       "settings": {
