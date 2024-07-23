@@ -380,7 +380,7 @@
             "text": "Style never goes out of fashion and neither do our best sellers. They are the staples and\nthe accents that our members enjoy most.",
             "text_size": 24,
             "text_line_height": 3.5,
-            "margin_top_text": 0,
+            "margin_top_text": 5,
             "text_color": "#000000",
             "text_width": "900px"
           }
@@ -388,6 +388,9 @@
       },
       "block_order": [
         "text_nBTLJb"
+      ],
+      "custom_css": [
+        ".rich-text__text rte {line-height: 1.5 ！important;}"
       ],
       "settings": {
         "container": "fullwidth",
