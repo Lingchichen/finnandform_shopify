@@ -873,7 +873,8 @@
         ".image-zoom img {will-change: none !important; transition: none !important;}",
         ".bg-policies-block .halo-row {padding: 0 !important; margin: 0 !important;}",
         ".bg-policies-block {--body-custom-width-container: 1650px !important;}",
-        ".halo-item {padding: 0 !important;}"
+        ".halo-item {padding: 0 !important;}",
+        ".banner-heading{letter-spacing:3px !important;}"
       ],
       "settings": {
         "container": "container",
