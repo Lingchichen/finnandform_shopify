@@ -33,13 +33,13 @@
     assign icon_for_image = section.settings.icon_for_image
     assign effects_bg = section.settings.effects_bg
     assign effects_opacity = section.settings.effects_opacity
-    
+
     if section.settings.enable_hide_portion
         assign images_per_row = section.settings.images_per_row | times: 1
         assign instagram_item_limit = section.settings.instagram_item_limit | times: 1
         if  images_per_row == instagram_item_limit
             assign enable_hide_portion = 'enable_hide_portion'
-        endif 
+        endif
     endif
 
     if section.settings.block_layout == 'infinite'
@@ -79,7 +79,7 @@
                     <h3 class="title{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: 0;{% endif %}--margin-bottom-title: {{ section.settings.mg_bottom_title | append: 'px' }}"><span class="text">{{ section.settings.instagram_title }}</span></h3>
                 {%- endif -%}
                 {%- if section.settings.instagram_des != blank -%}
-                    <div class="subtext-instagram{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: 1;{% endif %}--margin-bottom-des: {{ section.settings.margin_bottom_des | append: 'px' }}">{{ section.settings.instagram_des }}</div>        
+                    <div class="subtext-instagram{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: 1;{% endif %}--margin-bottom-des: {{ section.settings.margin_bottom_des | append: 'px' }}">{{ section.settings.instagram_des }}</div>
                 {%- endif -%}
                 {%- if section.settings.view_all != blank -%}
                     <a class="view_all{% if section.settings.enable_border_view_all %} has-border{% endif %}{% if settings.banner_animation == 'effect_fade_up' %} scroll-trigger animate--slide-in{% endif %}"{% if section.settings.link_view_all == blank %} role="link" aria-disabled="true"{% else %} href="{{ section.settings.link_view_all }}"{% endif %} title="{{section.settings.view_all}}" style="{% if settings.banner_animation == 'effect_fade_up' %}--animation-order: 2;{% endif %}--font-weight-view-all-style: {{ section.settings.font_weight_view_all }};--mg-bottom-view-style: {{ section.settings.mg_bottom_view | append: 'px' }};--color-view-all-style: {{ section.settings.color_view_all }};--font-size-view-all-style: {{ section.settings.view_all_fs | append: 'px' }}">{{ section.settings.view_all }}</a>
@@ -116,7 +116,7 @@
                                             {%- if settings.banner_animation == 'effect_fade_up' -%}
                                             <div class="scroll-trigger animate--slide-in" data-cascade style="--animation-order: {{ forloop.index }};">
                                             {%- endif -%}
-                                                <a class="adaptive_height image-zoom" {% if section.settings.type_instagram_by_gallery == 'link' %}{% if block.settings.link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.link }}"{% endif %}{% else %}class="fancybox" rel="gallery1" href="{{ block.settings.image | img_url: 'master' }}" data-fancybox="images"{% endif %} style="padding-top: {% unless preview_img.presentation.focal_point == '50.0% 50.0%' %}{{ 1 | divided_by: preview_img.aspect_ratio | times: 120 | append: '%' }}{% else %}{{ 1 | divided_by: preview_img.aspect_ratio | times: 100 | append: '%' }}{% endunless %}"> 
+                                                <a class="adaptive_height image-zoom" {% if section.settings.type_instagram_by_gallery == 'link' %}{% if block.settings.link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.link }}"{% endif %}{% else %}class="fancybox" rel="gallery1" href="{{ block.settings.image | img_url: 'master' }}" data-fancybox="images"{% endif %} style="padding-top: {% unless preview_img.presentation.focal_point == '50.0% 50.0%' %}{{ 1 | divided_by: preview_img.aspect_ratio | times: 120 | append: '%' }}{% else %}{{ 1 | divided_by: preview_img.aspect_ratio | times: 100 | append: '%' }}{% endunless %}">
                                                     <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ preview_img | img_url: 'master' }}" {% unless settings.enable_lazyload %}src="{{ preview_img | img_url: 'master' }}"{% endunless %} alt="{{ image.alt | default: shop.name | escape }}" loading="lazy"{% if settings.enable_lazyload %} class="lazyload"{% endif %}{% unless preview_img.presentation.focal_point == '50.0% 50.0%' %} style="object-position: {{ preview_img.presentation.focal_point }}"{% endunless %}>
                                                     {%- if settings.enable_lazyload -%}<span class="data-lazy-loading"></span>{%- endif -%}
                                                     {%- if icon_for_image != blank -%}
@@ -127,7 +127,7 @@
                                             </div>
                                             {% endif %}
                                         </div>
-                                    {%- else -%}  
+                                    {%- else -%}
                                         <div class="halo-item{% if effects_bg != blank %} has-effects{% endif %}" style="--effects-bg: {{ effects_bg }}; --effects-opacity: {{ effects_opacity }}">
                                             {% if settings.banner_animation == 'effect_fade_up' %}
                                             <div class="scroll-trigger animate--slide-in" data-cascade style="--animation-order: {{ forloop.index }};">
@@ -161,7 +161,7 @@
                                     {% if settings.banner_animation == 'effect_fade_up' %}
                                     <div class="scroll-trigger animate--slide-in" data-cascade style="--animation-order: {{ forloop.index }};">
                                     {% endif %}
-                                        <a class="adaptive_height image-zoom" {% if section.settings.type_instagram_by_gallery == 'link' %}{% if block.settings.link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.link }}"{% endif %}{% else %}class="fancybox" rel="gallery1" href="{{ block.settings.image | img_url: 'master' }}" data-fancybox="images"{% endif %} style="padding-top: {% unless preview_img.presentation.focal_point == '50.0% 50.0%' %}{{ 1 | divided_by: preview_img.aspect_ratio | times: 120 | append: '%' }}{% else %}{{ 1 | divided_by: preview_img.aspect_ratio | times: 100 | append: '%' }}{% endunless %}"> 
+                                        <a class="adaptive_height image-zoom" {% if section.settings.type_instagram_by_gallery == 'link' %}{% if block.settings.link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.link }}"{% endif %}{% else %}class="fancybox" rel="gallery1" href="{{ block.settings.image | img_url: 'master' }}" data-fancybox="images"{% endif %} style="padding-top: {% unless preview_img.presentation.focal_point == '50.0% 50.0%' %}{{ 1 | divided_by: preview_img.aspect_ratio | times: 120 | append: '%' }}{% else %}{{ 1 | divided_by: preview_img.aspect_ratio | times: 100 | append: '%' }}{% endunless %}">
                                             <img {% if settings.enable_lazyload %}data-{% endif %}srcset="{{ preview_img | img_url: 'master' }}" {% unless settings.enable_lazyload %}src="{{ preview_img | img_url: 'master' }}"{% endunless %} alt="{{ image.alt | default: shop.name | escape }}" loading="lazy"{% if settings.enable_lazyload %} class="lazyload"{% endif %}{% unless preview_img.presentation.focal_point == '50.0% 50.0%' %} style="object-position: {{ preview_img.presentation.focal_point }}"{% endunless %}>
                                             {%- if settings.enable_lazyload -%}<span class="data-lazy-loading"></span>{%- endif -%}
                                             {%- if icon_for_image != blank -%}
@@ -172,7 +172,7 @@
                                     </div>
                                     {% endif %}
                                 </div>
-                            {%- else -%}  
+                            {%- else -%}
                                 <div class="halo-item{% if section.settings.block_layout == 'grid' and section.settings.display_instagram_button %} {% unless section.settings.type_button_more == 'link' %}{{ class_hidden }}{% endunless %}{% endif %}{% if effects_bg != blank %} has-effects{% endif %}" style="--effects-bg: {{ effects_bg }}; --effects-opacity: {{ effects_opacity }}">
                                     {% if settings.banner_animation == 'effect_fade_up' %}
                                     <div class="scroll-trigger animate--slide-in" data-cascade style="--animation-order: {{ forloop.index }};">
@@ -263,7 +263,7 @@
     {%- unless section.settings.display_arrow %}
     .section-block-{{section.id}} .item {padding: 0 2.5px}
     {% endunless %}
-   
+
     {%- if instagram_bg_image != blank -%}
         .section-block-{{section.id}}{background: url({{ instagram_bg_image | img_url: '1920x' }});background-repeat: repeat-x;background-size: cover}
         .section-block-{{section.id}} .halo-block-header .title .text {background-color: transparent}
@@ -301,7 +301,7 @@
           opacity: 1;
           transform: translateY(0);
         }
-    {%- endif -%}  
+    {%- endif -%}
 
     @media (max-width: 1024px) {
         {%- if instagram_bg_image != blank -%}
@@ -420,7 +420,7 @@
   {
     "name": "t:sections.instagram.name",
     "class": "sections-instagram-block",
-    "settings": [   
+    "settings": [
         {
             "type": "header",
             "content": "t:settings_schema.general.name"
@@ -959,7 +959,7 @@
           "type" : "textarea",
           "id" : "embed_code",
           "label" : "t:sections.instagram.settings.type_app.embed_code"
-        },              
+        },
         {
           "type" : "header",
           "content" : "t:sections.instagram.settings.type_image.content"
