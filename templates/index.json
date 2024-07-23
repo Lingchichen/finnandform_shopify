@@ -118,7 +118,7 @@
             "bg_color_content": "",
             "border_color_content": "",
             "content_width": 750,
-            "alignment": "left",
+            "alignment": "center",
             "enable_custom_position": false,
             "custom_horizontal": "",
             "custom_vertical": "",
@@ -170,7 +170,7 @@
         "hr {border: none; \/* 移除默认样式 *\/ height: 1px; \/* 设置线的高度 *\/ background-color: white; \/* 设置线的颜色 *\/ margin: 15px 0; \/* 设置线的上下外边距 *\/}",
         ".slide-heading slide-pc {font-size: 5rem;}",
         ".slide-text slide-pc {font-size: 1.5rem !importanti;}",
-        "@media(max-width: 768px){}"
+        "@media (max-width: 768px) {}"
       ],
       "settings": {
         "container": "fullwidth",
