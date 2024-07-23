@@ -1361,7 +1361,7 @@
         ".banner-heading {letter-spacing: 6px !important;}",
         ".banner-text {letter-spacing: 0px;}",
         ".halo-banner-wrapper .flex-box__banner .content-box {margin-right: 20% !important;}",
-        ".img-box .image img{height:90%; top:5%; bottom:5%;}"
+        ".img-box .image img {height: 90%; top: 5%; bottom: 5%;}"
       ],
       "settings": {
         "container": "container",
@@ -1590,9 +1590,10 @@
         "small_img_fg6Jfr"
       ],
       "custom_css": [
-        ".halo-banner-wrapper .type-item--small {margin-bottom: 0px;}",
         ".banner-heading {letter-spacing: 6px !important;}",
-        ".banner-text {letter-spacing: 0.5px;}"
+        ".banner-text {letter-spacing: 0px;}",
+        ".halo-banner-wrapper .flex-box__banner .content-box {margin-right: 20% !important;}",
+        ".img-box .image img {height: 90%; top: 5%; bottom: 5%;}"
       ],
       "settings": {
         "container": "container",
