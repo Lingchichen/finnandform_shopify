@@ -1091,7 +1091,7 @@
             "margin_bottom_des": 35,
             "color_des": "#232323",
             "color_des_mb": "#ffffff",
-            "countdown": ".banner-heading{\n--letter_spacing_heading:2px !important;\n\n}",
+            "countdown": "",
             "hide_countdown_fc": "countdown",
             "countdown_style": "round",
             "countdown_position": "countdown_below_desc",
@@ -1237,7 +1237,8 @@
       ],
       "custom_css": [
         "#halo-image-banner-template--17222530334939__image_banner_zCagjg {margin: 30px;}",
-        ".banner-heading {border-top: 1px solid white; border-bottom: 1px solid white;}"
+        ".banner-heading {border-top: 1px solid white; border-bottom: 1px solid white;}",
+        ".banner-heading {--letter_spacing_heading: 2px !important; margin:2px;}"
       ],
       "settings": {
         "container": "1770",
