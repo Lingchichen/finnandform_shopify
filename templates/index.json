@@ -1091,7 +1091,7 @@
             "margin_bottom_des": 35,
             "color_des": "#232323",
             "color_des_mb": "#ffffff",
-            "countdown": "",
+            "countdown": ".banner-heading{\n--letter_spacing_heading:2px !important;\n\n}",
             "hide_countdown_fc": "countdown",
             "countdown_style": "round",
             "countdown_position": "countdown_below_desc",
