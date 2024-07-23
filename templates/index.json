@@ -1359,7 +1359,8 @@
       ],
       "custom_css": [
         ".banner-heading {letter-spacing: 6px !important;}",
-        ".banner-text {letter-spacing: 0px;}"
+        ".banner-text {letter-spacing: 0px;}",
+        ".content-box text-left{margin-right:20% !important;}"
       ],
       "settings": {
         "container": "container",
