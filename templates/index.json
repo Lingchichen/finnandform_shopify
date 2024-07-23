@@ -675,7 +675,7 @@
         ".image-zoom img {will-change: none !important; transition: none !important;}",
         ".bg-policies-block .halo-row {padding: 0 !important; margin: 0 !important;}",
         ".bg-policies-block {--body-custom-width-container: 1650px !important;}",
-        ".halo-item{padding:0 !important;}"
+        ".halo-item {padding: 0 !important;}"
       ],
       "settings": {
         "container": "container",
@@ -1303,13 +1303,13 @@
             "sub_title_position": "sub_title_above",
             "color_sub_title": "#232323",
             "heading": "Sensible Luxury",
-            "letter_spacing_heading": "",
+            "letter_spacing_heading": "3",
             "font_size_heading": 52,
             "font_size_heading_mb": 24,
             "margin_bottom_heading": 20,
             "font_weight_heading": "600",
             "color_heading": "#ffffff",
-            "text": "You've earned the accolades, built your future and confirmed your promise. You have always made smart choices, at work, at home, and in life. Now it's time to sit back and enjoy your success. Finn & Form furniture is designed and built with you in mind. It is smart luxury for those who appreciate craftsmanship and quality but won't overpay.\n\nFinn & Form is a testament to the proven traditions of Italyʼs storied ateliers, tanners and furniture makers but also an appreciation of tech-forward engineers, designers and planners who use AI-enabled predictive analytics to determine the styles and quantities of furniture sought by discerning members.",
+            "text": "You've earned the accolades, built your future and confirmed your promise. You have always made smart choices, at work, at home, and in life. Now it's time to sit back and enjoy your success. Finn & Form furniture is designed and built with you in mind. It is smart luxury for those who appreciate craftsmanship and quality but won't overpay.\n<br>\n<br>\n\nFinn & Form is a testament to the proven traditions of Italyʼs storied ateliers, tanners and furniture makers but also an appreciation of tech-forward engineers, designers and planners who use AI-enabled predictive analytics to determine the styles and quantities of furniture sought by discerning members.",
             "font_size_des": 20,
             "font_size_des_mb": 12,
             "line_height_des": 26,
