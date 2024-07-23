@@ -672,7 +672,8 @@
       ],
       "custom_css": [
         ".container {padding: 0;}",
-        ".image-zoom img {will-change: none !important; transition: none !important;}"
+        ".image-zoom img {will-change: none !important; transition: none !important;}",
+        ".bg-policies-block{padding:0 !important; margin:0 !important;}"
       ],
       "settings": {
         "container": "container",
